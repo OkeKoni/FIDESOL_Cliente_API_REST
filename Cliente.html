@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <title>Países del mundo</title>
+    <link rel="Stylesheet" href="./Cliente.css">
+  </head>
+
+  <body>
+
+    <h1 id="countries">Consulta los países del mundo</h1>
+
+    <div id="consultaSearch">
+      <select id="select-parametro">
+        <option value="" disabled>Parámetros búsqueda</option>
+        <option value="0">País</option>
+        <option value="1">Region</option>
+        <option value="2">Capital</option>
+        <option value="3">Idioma</option>
+        <option value="4">Población máxima</option>
+        <option value="5">Población mínima</option>
+      </select>
+
+      <input type="search" id="consultas" placeholder="Introduzca su búsqueda">
+      <input type="button" id="verTodo" value="VER TODO">
+    </div>
+
+    <template id="country-template">
+        <div class="country-card">
+
+          <img>
+          <h2></h2>
+
+          <div class="country-info">
+            <label>Capital:</label>
+              <p name="capital"></p>
+            <label>Region: </label>
+              <p name="region"></p>
+            <label>Poblacion: </label>
+              <p name="poblacion"></p>
+            <label>Idioma: </label>
+              <p name="idioma"></p>
+          </div>
+
+        </div>
+    </template>
+
+    <div class="main-content">
+      <div id="card-container" class="card-container"></div>
+    </div>
+
+  <script src="./Cliente.js"></script>
+
+  </body>
+</html>
+

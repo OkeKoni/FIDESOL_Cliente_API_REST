@@ -1,0 +1,131 @@
+body{
+    background-color: #b0f1ff;
+}
+
+#countries{
+    color: #2c3e50;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #3498db;
+}
+
+#consultas {
+    width: 375px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: black;
+    outline: none;
+}
+
+#consultas:hover,
+#consultas:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#consultaSearch {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+#select-parametro {
+    background-color: #fff;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: black;
+    cursor: pointer;
+}
+
+#select-parametro:hover,
+#select-parametro:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#verTodo {
+    background-color: #fff;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: black;
+    cursor: pointer;
+}
+
+#verTodo:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 1rem;
+    height: max-content;
+    margin-top: 1rem;
+}
+
+.country-card {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background: #d6d6d6;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.country-card > img {
+    border: 2px solid #000000;
+    max-width: 70%;
+    aspect-ratio: 3/2;
+    margin-left: 15%;
+    border-radius: 4px;
+}
+
+.country-card > h2 {
+    margin-top: 1rem;
+    text-align: center  ;
+}
+
+.country-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+}
+
+.country-info > label {
+    font-weight: bold;
+}
+
+.country-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+}
+
+.country-info > p, label {
+    margin: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 1rem;
+    height: max-content;
+    margin-top: 1rem;
+}
